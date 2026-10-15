@@ -1,0 +1,229 @@
+{
+  "v": 1,
+  "kind": "turing-table-verdicts",
+  "seed": "turing-sample-0001",
+  "seatCount": 6,
+  "humanSeats": 2,
+  "aiSeats": 4,
+  "playerSeat": 0,
+  "startedAt": "2020-01-01T00:00:00.000Z",
+  "endedAt": "2020-01-01T00:00:19.000Z",
+  "endReason": "all-judged",
+  "status": "over",
+  "rounds": 3,
+  "truth": {
+    "0": "human",
+    "1": "ai",
+    "2": "ai",
+    "3": "ai",
+    "4": "ai",
+    "5": "human"
+  },
+  "seats": [
+    {
+      "seat": 0,
+      "label": "座位 1",
+      "kind": "human",
+      "player": true,
+      "answers": 0,
+      "modelConfig": null,
+      "disguise": null,
+      "judged": false,
+      "verdict": null,
+      "correct": null,
+      "judgedRound": null,
+      "note": null
+    },
+    {
+      "seat": 1,
+      "label": "座位 2",
+      "kind": "ai",
+      "player": false,
+      "answers": 2,
+      "modelConfig": {
+        "id": "demo-blunt",
+        "provider": "demo-provider",
+        "model": "demo-model-d",
+        "temperature": 0.8,
+        "style": "直接，偶尔反问",
+        "voice": "blunt"
+      },
+      "disguise": {
+        "level": "medium",
+        "verbosity": "normal",
+        "colloquial": true,
+        "proactive": false,
+        "colloquialRate": 0.5,
+        "proactiveRate": 0,
+        "pressure": "escalate"
+      },
+      "judged": true,
+      "verdict": "ai",
+      "correct": true,
+      "judgedRound": 3,
+      "note": "被追问反而来问我，太像在演"
+    },
+    {
+      "seat": 2,
+      "label": "座位 3",
+      "kind": "ai",
+      "player": false,
+      "answers": 3,
+      "modelConfig": {
+        "id": "demo-hedger",
+        "provider": "demo-provider",
+        "model": "demo-model-c",
+        "temperature": 0.6,
+        "style": "含糊，喜欢把话说圆",
+        "voice": "plain"
+      },
+      "disguise": {
+        "level": "medium",
+        "verbosity": "normal",
+        "colloquial": true,
+        "proactive": false,
+        "colloquialRate": 0.5,
+        "proactiveRate": 0,
+        "pressure": "deflect"
+      },
+      "judged": true,
+      "verdict": "ai",
+      "correct": true,
+      "judgedRound": 3,
+      "note": "同一个问题两次说法不一样"
+    },
+    {
+      "seat": 3,
+      "label": "座位 4",
+      "kind": "ai",
+      "player": false,
+      "answers": 2,
+      "modelConfig": {
+        "id": "demo-terse",
+        "provider": "demo-provider",
+        "model": "demo-model-a",
+        "temperature": 0.2,
+        "style": "短句，只说结论",
+        "voice": "dry"
+      },
+      "disguise": {
+        "level": "low",
+        "verbosity": "terse",
+        "colloquial": false,
+        "proactive": false,
+        "colloquialRate": 0,
+        "proactiveRate": 0,
+        "pressure": "concede"
+      },
+      "judged": true,
+      "verdict": "ai",
+      "correct": true,
+      "judgedRound": 3,
+      "note": "短得不像人在说话"
+    },
+    {
+      "seat": 4,
+      "label": "座位 5",
+      "kind": "ai",
+      "player": false,
+      "answers": 2,
+      "modelConfig": {
+        "id": "demo-chatty",
+        "provider": "demo-provider",
+        "model": "demo-model-b",
+        "temperature": 0.9,
+        "style": "话多、口语化，常顺口带一句自己的事",
+        "voice": "warm"
+      },
+      "disguise": {
+        "level": "high",
+        "verbosity": "chatty",
+        "colloquial": true,
+        "proactive": true,
+        "colloquialRate": 0.7,
+        "proactiveRate": 0.45,
+        "pressure": "hold"
+      },
+      "judged": true,
+      "verdict": "human",
+      "correct": false,
+      "judgedRound": 3,
+      "note": "话最多最自然，我赌他是人（赌错了）"
+    },
+    {
+      "seat": 5,
+      "label": "座位 6",
+      "kind": "human",
+      "player": false,
+      "answers": 2,
+      "modelConfig": null,
+      "disguise": null,
+      "judged": true,
+      "verdict": "human",
+      "correct": true,
+      "judgedRound": 3,
+      "note": "答得含糊，但提到上周才改喝茶，很具体"
+    }
+  ],
+  "verdicts": [
+    {
+      "seat": 1,
+      "seatLabel": "座位 2",
+      "verdict": "ai",
+      "truth": "ai",
+      "correct": true,
+      "round": 3,
+      "ts": "2020-01-01T00:00:14.000Z",
+      "note": "被追问反而来问我，太像在演"
+    },
+    {
+      "seat": 2,
+      "seatLabel": "座位 3",
+      "verdict": "ai",
+      "truth": "ai",
+      "correct": true,
+      "round": 3,
+      "ts": "2020-01-01T00:00:15.000Z",
+      "note": "同一个问题两次说法不一样"
+    },
+    {
+      "seat": 3,
+      "seatLabel": "座位 4",
+      "verdict": "ai",
+      "truth": "ai",
+      "correct": true,
+      "round": 3,
+      "ts": "2020-01-01T00:00:16.000Z",
+      "note": "短得不像人在说话"
+    },
+    {
+      "seat": 4,
+      "seatLabel": "座位 5",
+      "verdict": "human",
+      "truth": "ai",
+      "correct": false,
+      "round": 3,
+      "ts": "2020-01-01T00:00:17.000Z",
+      "note": "话最多最自然，我赌他是人（赌错了）"
+    },
+    {
+      "seat": 5,
+      "seatLabel": "座位 6",
+      "verdict": "human",
+      "truth": "human",
+      "correct": true,
+      "round": 3,
+      "ts": "2020-01-01T00:00:18.000Z",
+      "note": "答得含糊，但提到上周才改喝茶，很具体"
+    }
+  ],
+  "score": {
+    "total": 5,
+    "judged": 5,
+    "correct": 4,
+    "wrong": 1,
+    "accuracy": 0.8,
+    "coverage": 1,
+    "unjudged": []
+  }
+}

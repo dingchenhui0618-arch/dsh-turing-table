@@ -1,0 +1,59 @@
+{
+  "name": "dsh-turing-table",
+  "version": "0.1.0",
+  "description": "Turing table for DeepSeek Harness: the seats at one table are played by agents on different model configs, you question them and cross-check their answers to find which seats are AI, and every round exports a reproducible per-seat JSONL transcript plus a verdict record.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./table": "./lib/table.js",
+    "./export": "./lib/export.js",
+    "./personas": "./lib/personas.js",
+    "./speaker": "./lib/speaker.js",
+    "./rng": "./lib/rng.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "examples",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "sample": "node scripts/make-sample.mjs",
+    "export": "node scripts/export.mjs",
+    "test": "node --test",
+    "prepack": "node scripts/build.mjs"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [
+        "@deepseek-ai/dsh-client-runtime",
+        "@deepseek-ai/dsh-client-ui-conversation",
+        "@deepseek-ai/dsh-client-ui-layout"
+      ],
+      "platform": "web"
+    }
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "turing-test",
+    "social-deduction",
+    "multi-agent",
+    "reproducible"
+  ],
+  "license": "MIT"
+}

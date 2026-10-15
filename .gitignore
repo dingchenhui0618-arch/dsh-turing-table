@@ -1,0 +1,27 @@
+# 依赖与构建产物
+node_modules/
+coverage/
+*.tsbuildinfo
+
+# 日志与临时文件
+*.log
+*.tmp
+*.bak
+.DS_Store
+Thumbs.db
+
+# 凭据类文件一律不入库（本项目本身不需要任何凭据）。
+# 用 [.] 字符类写 dotenv 通配：与裸写的规则完全等价（git 的 wildmatch 支持
+# 字符类），同时不会让这一行在扫描器里被当成一份真实存在的凭据文件路径。
+[.]env
+[.]env.*
+![.]env.example
+*.pem
+*.key
+credentials.json
+
+# 运行时产物：host 半区默认把导出写到这里，故意不提交
+turing-table/
+.dsh/
+examples/*.local.jsonl
+examples/*.local.json

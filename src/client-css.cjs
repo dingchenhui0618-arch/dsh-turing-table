@@ -1,0 +1,45 @@
+// Client styles for dsh-turing-table.
+//
+// Same discipline as the host-side panel in dsh-warden: no hard-coded
+// background or text colour, everything is mixed against currentColor, so the
+// table stays legible in light and dark themes without shipping two palettes.
+
+module.exports = [
+  '.tt-root{display:flex;flex-direction:column;gap:14px;padding:16px;height:100%;overflow:auto;color:inherit;font-size:13px;line-height:1.5}',
+  '.tt-head{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}',
+  '.tt-title{font-size:15px;font-weight:600}',
+  '.tt-sub{opacity:.6;font-size:12px}',
+  '.tt-spacer{flex:1}',
+  '.tt-btn{border:1px solid color-mix(in srgb,currentColor 22%,transparent);background:transparent;color:inherit;font:inherit;font-size:12px;padding:3px 10px;border-radius:6px;cursor:pointer}',
+  '.tt-btn:hover{background:color-mix(in srgb,currentColor 8%,transparent)}',
+  '.tt-btn:disabled{opacity:.45;cursor:default}',
+  '.tt-seats{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:10px}',
+  '.tt-seat{border:1px solid color-mix(in srgb,currentColor 14%,transparent);border-radius:8px;padding:9px 11px;display:flex;flex-direction:column;gap:6px}',
+  '.tt-seat.tt-player{border-color:color-mix(in srgb,currentColor 34%,transparent)}',
+  '.tt-seat.tt-pending{border-style:dashed}',
+  '.tt-seat.tt-ai{border-color:color-mix(in srgb,#dc2626 45%,transparent)}',
+  '.tt-seat.tt-human{border-color:color-mix(in srgb,#16a34a 45%,transparent)}',
+  '.tt-seat-head{display:flex;align-items:center;gap:8px}',
+  '.tt-label{font-weight:600}',
+  '.tt-meta{opacity:.6;font-size:11px;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;word-break:break-all}',
+  '.tt-last{opacity:.85;font-size:12px}',
+  '.tt-actions{display:flex;gap:6px;flex-wrap:wrap}',
+  '.tt-badge{font-size:11px;padding:1px 8px;border-radius:999px;white-space:nowrap;border:1px solid transparent;background:color-mix(in srgb,currentColor 8%,transparent)}',
+  '.tt-badge.tt-ai{background:color-mix(in srgb,#dc2626 18%,transparent);color:color-mix(in srgb,#dc2626 78%,currentColor);border-color:color-mix(in srgb,#dc2626 35%,transparent)}',
+  '.tt-badge.tt-human{background:color-mix(in srgb,#16a34a 18%,transparent);color:color-mix(in srgb,#16a34a 78%,currentColor);border-color:color-mix(in srgb,#16a34a 35%,transparent)}',
+  '.tt-badge.tt-bad{background:color-mix(in srgb,#dc2626 14%,transparent);color:color-mix(in srgb,#dc2626 78%,currentColor)}',
+  '.tt-ask{display:flex;gap:8px;flex-wrap:wrap;align-items:center}',
+  '.tt-input{flex:1;min-width:220px;border:1px solid color-mix(in srgb,currentColor 22%,transparent);background:transparent;color:inherit;font:inherit;font-size:13px;padding:5px 9px;border-radius:6px}',
+  '.tt-select{border:1px solid color-mix(in srgb,currentColor 22%,transparent);background:transparent;color:inherit;font:inherit;font-size:12px;padding:5px 6px;border-radius:6px}',
+  '.tt-score{display:grid;grid-template-columns:repeat(auto-fit,minmax(84px,1fr));gap:8px}',
+  '.tt-stat{border:1px solid color-mix(in srgb,currentColor 14%,transparent);border-radius:8px;padding:7px 10px}',
+  '.tt-stat b{display:block;font-size:17px;font-variant-numeric:tabular-nums;line-height:1.2}',
+  '.tt-stat span{opacity:.6;font-size:11px}',
+  '.tt-transcript{display:flex;flex-direction:column;gap:6px}',
+  '.tt-msg{border-left:2px solid color-mix(in srgb,currentColor 20%,transparent);padding:3px 0 3px 10px}',
+  '.tt-msg.tt-question{border-left-color:color-mix(in srgb,#2563eb 55%,transparent)}',
+  '.tt-msg-head{font-size:11px;opacity:.6}',
+  '.tt-round{opacity:.75;font-size:12px;font-weight:600;margin-top:6px}',
+  '.tt-err{border:1px solid color-mix(in srgb,#dc2626 50%,transparent);background:color-mix(in srgb,#dc2626 8%,transparent);border-radius:8px;padding:8px 10px;font-size:12px}',
+  '.tt-empty{opacity:.55;font-size:12px;padding:8px 0}',
+].join('')

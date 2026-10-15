@@ -1,0 +1,7 @@
+# src/ 里是手写源码，lib/ 是 scripts/build.mjs 的产物，examples/ 是
+# scripts/make-sample.mjs 的产物，三者都入库；统一 LF，否则换机后 diff
+# 全是行尾噪音，示例对局的字节也不再可比。
+* text=auto eol=lf
+*.png binary
+*.jpg binary
+*.ico binary

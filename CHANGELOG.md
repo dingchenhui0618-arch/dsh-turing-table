@@ -1,5 +1,14 @@
 # 变更记录
 
+## [Unreleased]
+
+### 文档与工程
+
+- 新增 `SECURITY.md`：写清提问与座位对话会被发到配置的模型 provider、`export` 可写任意
+  目录并覆盖同名文件、`/dsh-turing-table` 路由没有鉴权与速率限制。
+- 确认 CI 已覆盖单测（`.github/workflows/test.yml`：`node --test`，本次未改动）。
+- README 顶部补 CI 与 license badge、star 引导一句。
+
 ## 0.1.0
 
 首个版本：一张桌、N 个座位、seed 决定谁是 AI。

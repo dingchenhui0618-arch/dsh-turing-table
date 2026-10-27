@@ -1,6 +1,11 @@
 # dsh-turing-table（图灵圆桌）
 
+[![CI](https://github.com/dingchenhui0618-arch/dsh-turing-table/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/dingchenhui0618-arch/dsh-turing-table/actions/workflows/test.yml)
+[![license](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
 给 DeepSeek Harness 的**社交推理游戏**：一张桌上有 N 个座位，其中若干座位由**不同模型配置**的 agent 扮演，你要靠**提问**和**交叉印证**（同一个事实换着问、比较各座位的说法矛盾）找出哪些座位是 AI。每局导出**逐席位对话 JSONL**与**判定记录**，同一 seed + 同一份操作脚本可以复现出逐字节相同的对局。
+
+> 用着还行的话，点个 ⭐ 就够了——插件市场的「搜插件」按 GitHub star 排序，star 是这个插件能被人翻到的唯一杠杆。
 
 ## 为什么要有它
 
